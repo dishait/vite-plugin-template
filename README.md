@@ -1,19 +1,20 @@
-# node-lib-template
+# vite-plugin-template
 
-开箱即用的 node 库模板
+开箱即用的 vite 插件模板
 
 <br />
 
-## features
+## Features 🦖
 
 - pnpm 的
-- vitest 测试
+- `vitest` 测试
 - 开箱即用的
-- typescript 的
+- `typescript` 的
 
 <br />
+<br />
 
-## Usage
+## Usage 🦕
 
 ### install
 
@@ -33,8 +34,6 @@ pnpm test
 
 ```shell
 pnpm build
-
-// pnpm build:watch
 ```
 
 ### coverage
@@ -59,4 +58,28 @@ npm publish
 
 ```shell
 pnpm play
+
+// or pnpm play:open
+// or pnpm play:host
+// or pnpm play:build
+// or pnpm play:preview
+// or pnpm play:preview:open
+// or pnpm play:preview:host
 ```
+
+### release
+
+```shell
+pnpm release
+```
+
+<br />
+<br />
+
+## License
+
+Made with name
+
+Published under [MIT License](./LICENSE).
+
+<br />
