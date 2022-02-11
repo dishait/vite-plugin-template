@@ -1,5 +1,14 @@
-import { resolve } from 'path'
-const foo = 1
+import { Plugin, normalizePath } from 'vite'
+import { createPluginName } from './shared/create'
 
-export { resolve, foo }
+interface Options {}
 
+const useName = createPluginName()
+
+const usePlugin = (options: Partial<Options>): Plugin => {
+	return {
+		name: useName('name')
+	}
+}
+
+export default usePlugin
