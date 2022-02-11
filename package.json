@@ -1,11 +1,16 @@
 {
   "version": "1.0.0",
-  "name": "node-lib-template",
-  "description": "开箱即用的 node 库模板",
+  "name": "vite-plugin-template",
+  "description": "开箱即用的 vite 插件模板",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/name/repo.git"
+  },
   "exports": {
+    "./*": "./*",
     ".": {
       "require": "./dist/index.js",
       "import": "./dist/index.mjs",
@@ -18,22 +23,27 @@
   "scripts": {
     "build": "tsup",
     "test": "vitest",
-    "dev": "esno src/index.ts",
-    "play": "esno demo/index.ts",
+    "dev": "build -- --watch",
     "test:watch": "vitest --watch",
     "coverage": "vitest --coverage",
     "prepublishOnly": "npm run build",
-    "build:watch": "npm run build -- --watch src"
+    "play": "pnpm -C examples/vite run dev"
   },
   "keywords": [
-    "lib",
-    "tool",
-    "node",
-    "utils"
+    "vite",
+    "plugin",
+    "template"
   ],
-  "author": "markthree",
+  "author": {
+    "name": "name",
+    "email": "xx@xx.com",
+    "url": "https://github.com/name"
+  },
+  "bugs": {
+    "email": "xx@xx.com",
+    "url": "https://github.com/name/repo/issues"
+  },
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "@types/node": "^17.0.10",
     "c8": "^7.11.0",
