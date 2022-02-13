@@ -5,7 +5,7 @@ interface Options {}
 
 const useName = createPluginName()
 
-const usePlugin = (options: Partial<Options>): Plugin => {
+const usePlugin = (options?: Partial<Options>): Plugin => {
 	return {
 		name: useName('name')
 	}
