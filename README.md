@@ -29,8 +29,6 @@ pnpm i -w
 
 ### init:info
 
-初始化插件信息
-
 ```shell
 pnpm init:info
 ```
