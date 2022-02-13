@@ -16,10 +16,23 @@
 
 ## Usage 🦕
 
+
 ### install
 
 ```shell
+# 工作区安装
 pnpm i
+
+# 源码依赖安装
+pnpm i -w
+```
+
+### init:info
+
+初始化插件信息
+
+```shell
+pnpm init:info
 ```
 
 ### test
@@ -27,7 +40,7 @@ pnpm i
 ```shell
 pnpm test
 
-// or pnpm test:watch
+# or pnpm test:watch
 ```
 
 ### build
@@ -57,14 +70,15 @@ npm publish
 ### play
 
 ```shell
+# 工作区 dev
 pnpm play
 
-// or pnpm play:open
-// or pnpm play:host
-// or pnpm play:build
-// or pnpm play:preview
-// or pnpm play:preview:open
-// or pnpm play:preview:host
+# or pnpm play:open
+# or pnpm play:host
+# or pnpm play:build
+# or pnpm play:preview
+# or pnpm play:preview:open
+# or pnpm play:preview:host
 ```
 
 ### release

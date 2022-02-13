@@ -1,11 +1,9 @@
 export const createPluginName = (
-	repeat: boolean = false
+	reusable: boolean = false
 ) => {
 	let i = 0
 	return (name: string) => {
-		if (repeat) {
-			return `vite-plugin-${name}:${i++}`
-		}
-		return `vite-plugin-${name}`
+		const base = `vite-plugin-${name}`
+		return reusable ? `${base}:${i++}` : base
 	}
 }
