@@ -110,7 +110,7 @@ const init = plop => {
 			{
 				type: 'modify',
 				path: '../README.md',
-				transform(data, { name, description }) {
+				transform(data, { name, description, authorName }) {
 					data = data.replace(
 						'vite-plugin-template',
 						`vite-plugin-${name}`
@@ -119,6 +119,9 @@ const init = plop => {
 						'开箱即用的 vite 插件模板',
 						description
 					)
+
+					data = data.replace('name', authorName)
+
 					return data
 				}
 			},
