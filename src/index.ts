@@ -1,4 +1,4 @@
-import { Plugin, normalizePath } from 'vite'
+import type { Plugin } from 'vite'
 import { createPluginName } from './shared/create'
 
 interface Options {}
