@@ -120,7 +120,7 @@ const init = plop => {
 						description
 					)
 
-					data = data.replace('name', authorName)
+					data = data.replace('name', `[${authorName}](https://github.com/${authorName})`)
 
 					return data
 				}
