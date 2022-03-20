@@ -36,7 +36,7 @@ const init = plop => {
 			},
 			{
 				type: 'input',
-				name: 'eamil',
+				name: 'email',
 				email: '请输入您的邮箱'
 			}
 		],
